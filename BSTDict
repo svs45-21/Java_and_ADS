@@ -1,0 +1,47 @@
+// Program to create BSTNode and to run Binary search tree
+
+class BSTNode{
+    String key;
+    Strinrg Value;
+    BSTNode left,right;
+
+    BSTNode(String Key , String Value){
+        this.Key = Key;
+        this.Value =Value;
+        left = right = null;
+    }
+}
+
+class BstDict{
+    BSTNode root;
+
+    //Insert or Update 
+    BSTNode Insert(BSTNode node,String Key,String Value) {
+        if(node == null)
+            return new BSTNode(Key,Value);
+        if(Key.compareTo(node.Key) < 0)
+            node.left = Insert(node.left,Key,Value);
+        else if(Key.compareTo(node.Key) > 0)
+            node.right = Insert(node.right,Key,Value);
+        else 
+            node.Value = Value;
+        return node;
+    }
+
+}
+
+public class Main{
+    public static void main(String[] args){
+
+        BstDict bst = new BstDict();
+
+        //Insert Keyword and meaing pairs
+
+        bst.root = bst.Insert(bst.root, "Algoritm", "step by step process");
+        bst.root = bst.Insert(bst.root,"Data structure","Organized way to store and manage data" );
+        bst.root = bst.Insert(bst.root,"Compiler","It converts the source code into machine undersdtanable code ");
+        bs.root = bst.Insert(bst.root,"NETWORK","it ia a collection of connected devices");
+
+
+        }
+}  
