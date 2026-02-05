@@ -1,0 +1,157 @@
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class DictionaryBSTCollection {
+
+    // TreeMap = Self-balancing BST
+    private TreeMap<String, String> map = new TreeMap<>();
+
+    // ======================
+    // Add keyword
+    // ======================
+    public void add(String key, String value) {
+        map.put(key, value);
+        System.out.println("Added successfully");
+    }
+
+    // ======================
+    // Delete keyword
+    // ======================
+    public void delete(String key) {
+        if (map.remove(key) != null)
+            System.out.println("Deleted successfully");
+        else
+            System.out.println("Keyword not found");
+    }
+
+    // ======================
+    // Update meaning
+    // ======================
+    public void update(String key, String value) {
+        if (map.containsKey(key)) {
+            map.put(key, value);
+            System.out.println("Updated successfully");
+        } else {
+            System.out.println("Keyword not found");
+        }
+    }
+
+    // ======================
+    // Search keyword
+    // ======================
+    public void search(String key) {
+        if (map.containsKey(key))
+            System.out.println("Meaning: " + map.get(key));
+        else
+            System.out.println("Keyword not found");
+    }
+
+    // ======================
+    // Display Ascending
+    // ======================
+    public void displayAscending() {
+        for (Map.Entry<String, String> entry : map.entrySet())
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+    }
+
+    // ======================
+    // Display Descending
+    // ======================
+    public void displayDescending() {
+        for (Map.Entry<String, String> entry : map.descendingMap().entrySet())
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+    }
+
+    // ======================
+    // Maximum comparisons
+    // ======================
+    public void maxComparisons() {
+        int n = map.size();
+
+        if (n == 0) {
+            System.out.println("Dictionary empty");
+            return;
+        }
+
+        // Height of balanced BST ≈ log2(n)
+        int height = (int) Math.ceil(Math.log(n + 1) / Math.log(2));
+
+        System.out.println("Maximum comparisons ≈ " + height);
+    }
+
+    // ======================
+    // Main Menu
+    // ======================
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        DictionaryBSTCollection dict = new DictionaryBSTCollection();
+
+        int choice;
+
+        do {
+            System.out.println("\n---- Dictionary Menu ----");
+            System.out.println("1.Add");
+            System.out.println("2.Delete");
+            System.out.println("3.Update");
+            System.out.println("4.Search");
+            System.out.println("5.Display Ascending");
+            System.out.println("6.Display Descending");
+            System.out.println("7.Max Comparisons");
+            System.out.println("0.Exit");
+
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            String key, value;
+
+            switch (choice) {
+
+                case 1:
+                    System.out.print("Keyword: ");
+                    key = sc.nextLine();
+                    System.out.print("Meaning: ");
+                    value = sc.nextLine();
+                    dict.add(key, value);
+                    break;
+
+                case 2:
+                    System.out.print("Keyword: ");
+                    key = sc.nextLine();
+                    dict.delete(key);
+                    break;
+
+                case 3:
+                    System.out.print("Keyword: ");
+                    key = sc.nextLine();
+                    System.out.print("New Meaning: ");
+                    value = sc.nextLine();
+                    dict.update(key, value);
+                    break;
+
+                case 4:
+                    System.out.print("Keyword: ");
+                    key = sc.nextLine();
+                    dict.search(key);
+                    break;
+
+                case 5:
+                    dict.displayAscending();
+                    break;
+
+                case 6:
+                    dict.displayDescending();
+                    break;
+
+                case 7:
+                    dict.maxComparisons();
+                    break;
+            }
+
+        } while (choice != 0);
+
+        sc.close();
+    }
+}
+//BST implementation of Dictionary (Keytwords and Meanings)
