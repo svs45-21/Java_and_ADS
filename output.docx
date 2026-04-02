@@ -1,0 +1,232 @@
+──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac BSTOperations.java
+BSTOperations.java:61: error: cannot find symbol
+        Q2_BSTOperations bst = new Q2_BSTOperations();
+        ^
+  symbol:   class Q2_BSTOperations
+  location: class BSTOperations
+BSTOperations.java:61: error: cannot find symbol
+        Q2_BSTOperations bst = new Q2_BSTOperations();
+                                   ^
+  symbol:   class Q2_BSTOperations
+  location: class BSTOperations
+2 errors
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac BSTOperations.java
+BSTOperations.java:61: error: cannot find symbol
+        Q2_BSTOperations bst = new Q2_BSTOperations();
+        ^
+  symbol:   class Q2_BSTOperations
+  location: class BSTOperations
+BSTOperations.java:61: error: cannot find symbol
+        Q2_BSTOperations bst = new Q2_BSTOperations();
+                                   ^
+  symbol:   class Q2_BSTOperations
+  location: class BSTOperations
+2 errors
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac BSTOperations.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java BSTOperations      
+Inorder: 20 30 40 50 60 70 80 
+Height (nodes in longest path): 4
+Minimum value: 20
+Inorder after mirror: 80 70 60 50 40 30 25 20 
+Search 40: false
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac ExpressionTree.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java ExpressionTree      
+Inorder: (((a-(b*c))-(d/e))+f)
+Postorder (non‑recursive): a b c * - d e / - f + 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac PropositionalFormulaTree.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java PropositionalFormulaTree      
+Preorder of formula tree: | ! & p q r 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac CopyAndEraseBinaryTree.java  
+CopyAndEraseBinaryTree.java:41: error: cannot find symbol
+        Q5_CopyAndEraseBinaryTree tree = new Q5_CopyAndEraseBinaryTree();
+        ^
+  symbol:   class Q5_CopyAndEraseBinaryTree
+  location: class CopyAndEraseBinaryTree
+CopyAndEraseBinaryTree.java:41: error: cannot find symbol
+        Q5_CopyAndEraseBinaryTree tree = new Q5_CopyAndEraseBinaryTree();
+                                             ^
+  symbol:   class Q5_CopyAndEraseBinaryTree
+  location: class CopyAndEraseBinaryTree
+2 errors
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac CopyAndEraseBinaryTree.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java CopyAndEraseBinaryTree      
+Original: 5 10 15 
+Copy: 5 10 15 
+After erase, root = null
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q6_InorderThreadedTree.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q6_InorderThreadedTree      
+Inorder threaded traversal: 5 10 15 20 25 30 35 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q7_PreorderThreadedTree.java
+35 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q7_PreorderThreadedTree.java 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q7_PreorderThreadedTree       
+35 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q8_DictionaryBST.java        
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q8_DictionaryBST       
+Ascending:
+apple : a fruit
+ball : a round object
+cat : an animal
+Descending:
+cat : an animal
+ball : a round object
+apple : a fruit
+Found 'cat' in 3 comparisons
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q9_GraphInput.java   
+error: file not found: Q9_GraphInput.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q9_GraphInput.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q9_GraphInput      
+Number of vertices: 3
+Number of edges: 7
+Enter undirected edges (u v): 
+5 4
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 3
+        at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+        at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+        at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+        at java.base/java.util.Objects.checkIndex(Objects.java:365)
+        at java.base/java.util.ArrayList.get(ArrayList.java:428)
+        at Q9_GraphInput$GraphAdjList.addEdge(Q9_GraphInput.java:15)
+        at Q9_GraphInput.main(Q9_GraphInput.java:49)
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q9_GraphInput 
+Number of vertices: 4
+Number of edges: 5
+Enter undirected edges (u v): 
+0 1
+0 2
+1 2
+1 3
+2 3
+Adjacency List:
+0: 1 2 
+1: 0 2 3 
+2: 0 1 3 
+3: 1 2 
+Adjacency Matrix:
+0 1 1 0 
+1 0 1 1 
+1 1 0 1 
+0 1 1 0 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q10_FlightGraph.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q10_FlightGraph      
+GOI -> 
+BOM -> (GOI, 1.0) 
+BLR -> 
+DEL -> (BOM, 2.0) (BLR, 2.5) 
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q11_MinimumSpanningTree.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q11_MinimumSpanningTree      
+MST edges:
+0 - 1 (cost 10.0)
+3 - 2 (cost 4.0)
+0 - 3 (cost 5.0)
+Total cost: 19.0
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q12_ShortestRoute.java      
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q12_ShortestRoute      
+Shortest distances from 0:
+To 0 : 0.0
+To 1 : 3.0
+To 2 : 1.0
+To 3 : 4.0
+To 4 : 7.0
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q13_GreedyScheduling.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q13_GreedyScheduling      
+Order (taskId, duration):
+Task 1, duration 1, completion time 1
+Task 2, duration 2, completion time 3
+Task 0, duration 3, completion time 6
+Task 3, duration 5, completion time 11
+Total time spent by all tasks: 21
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q14_TelephoneBookHash.java
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q14_TelephoneBookHash      
+Bob's number: 22222
+Unknown: null
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac Q15_DictionaryHash.java   
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java Q15_DictionaryHash      
+Find 'two': 2
+Find 'two' after delete: null
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ javac BookTree.java          
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ java BookTree          
+Book: Data Structures
+  Chapter 1: Introduction
+    Section 1.1: Basics
+      Subsection 1.1.1: Definitions
+    Section 1.2: Complexity
+  Chapter 2: Trees
+    Section 2.1: Binary Trees
+    Section 2.2: AVL Trees
+                                                     
+┌──(sdk㉿sdk)-[/run/media/sdk/dragon_beast3/ADS]
+└─$ 
